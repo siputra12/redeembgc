@@ -8,7 +8,7 @@ if($r == "n" or !$r){
 	$csrf = @file_put_contents("csrf.bgc", readline("CsrfToken [?]\t"));
 	$cook = @file_put_contents("cookies.bgc", readline("Cookies [?]\t"));
 }
-$jeda = readline("Sleeps [?](def 10 sec)\t") ?: $jeda;
+$jeda = readline("Sleeps [?](def 10 sec)\t") ?: 10;
 $die_limit = 2;
 $d = 0; $r = true;
 foreach($file as $code){
